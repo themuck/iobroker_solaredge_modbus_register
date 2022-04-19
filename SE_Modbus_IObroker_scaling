@@ -1,0 +1,35 @@
+_address	name	description	unit	type	len	factor	offset	formula	role	room	poll	wp	cw	isScale
+40071	AC_Current	AC Total Current value	A	uint16be	1	1	0	x * Math.pow(10, sf['40075'])			true	false	false	false
+40072	AC_CurrentA	AC Phase A Current value	A	uint16be	1	1	0	x * Math.pow(10, sf['40075'])			true	false	false	false
+40073	AC_CurrentB	AC Phase B Current value	A	uint16be	1	1	0	x * Math.pow(10, sf['40075'])			true	false	false	false
+40074	AC_CurrentC	AC Phase C Current value	A	uint16be	1	1	0	x * Math.pow(10, sf['40075'])			true	false	false	false
+40075	AC_Current_SF			int16be	1	1	0				true	false	false	true
+40076	AC_VoltageAB	AC Voltage Phase AB value	V	uint16be	1	1	0	x * Math.pow(10, sf['40082'])			true	false	false	false
+40077	AC_VoltageBC	AC Voltage Phase BC value	V	uint16be	1	1	0	x * Math.pow(10, sf['40082'])			true	false	false	false
+40078	AC_VoltageCA	AC Voltage Phase CA value	V	uint16be	1	1	0	x * Math.pow(10, sf['40082'])			true	false	false	false
+40079	AC_VoltageAN	AC Voltage Phase A to N value	V	uint16be	1	1	0	x * Math.pow(10, sf['40082'])			true	false	false	false
+40080	AC_VoltageBN	AC Voltage Phase B to N value	V	uint16be	1	1	0	x * Math.pow(10, sf['40082'])			true	false	false	false
+40081	AC_VoltageCN	AC Voltage Phase C to N value	V	uint16be	1	1	0	x * Math.pow(10, sf['40082'])			true	false	false	false
+40082	AC_Voltage_SF			int16be	1	1	0				true	false	false	true
+40083	AC_Power	AC Power value	kW	int16be	1	1	0	x * Math.pow(10, sf['40084'])			true	false	false	false
+40084	AC_Power_SF			int16be	1	1	0				true	false	false	true
+40085	AC_Frequency	AC Frequency value	Hz	uint16be	1	1	0	x * Math.pow(10, sf['40086'])			true	false	false	false
+40086	AC_Frequency_SF			int16be	1	1	0				true	false	false	true
+40087	AC_VA	Apparent Power	VA	int16be	1	1	0	x * Math.pow(10, sf['40088'])			true	false	false	false
+40088	AC_VA_SF			int16be	1	1	0				true	false	false	true
+40089	AC_VAR	Reactive Power	VAR	int16be	1	1	0	x * Math.pow(10, sf['40090'])			true	false	false	false
+40090	AC_VAR_SF			int16be	1	1	0				true	false	false	true
+40091	AC_PF	Power Factor		int16be	1	1	0	x * Math.pow(10, sf['40092'])			true	false	false	false
+40092	AC_PF_SF			int16be	1	1	0				true	false	false	true
+40093	AC_Energy_WH	AC Lifetime Energy production	Wh	int32be	2	1	0	x * Math.pow(10, sf['40095'])			true	false	false	false
+40095	AC_Energy_WH_SF			uint16be	1	1	0				true	false	false	true
+40096	DC_Current	DC Current value	A	uint16be	1	1	0	x * Math.pow(10, sf['40097'])			true	false	false	false
+40097	DC_Current_SF			int16be	1	1	0				true	false	false	true
+40098	DC_Voltage	DC Voltage value	V	uint16be	1	1	0	x * Math.pow(10, sf['40099'])			true	false	false	false
+40099	DC_Voltage_SF			int16be	1	1	0				true	false	false	true
+40100	DC_Power	DC Power Value	kW	int16be	1	1	0	x * Math.pow(10, sf['40101'])			true	false	false	false
+40101	DC_Power_SF			int16be	1	1	0				true	false	false	true
+40103	Temp_Sink	Heat Sink Temperature	°C	int16be	1	1	0	x * Math.pow(10, sf['40106'])			true	false	false	false
+40106	Temp_SF			int16be	1	1	0				true	false	false	true
+40107	OP_State	Operation State		uint16be	1	1	0				true	false	false	false
+40108	I_Status_Vendor	Vendor-defined operating state and error codes.		uint16be	1	1	0				true	false	false	false
