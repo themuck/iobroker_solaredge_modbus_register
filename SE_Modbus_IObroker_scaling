@@ -11,7 +11,7 @@ _address	name	description	unit	type	len	factor	offset	formula	role	room	poll	wp	
 40080	AC_VoltageBN	AC Voltage Phase B to N value	V	uint16be	1	1	0	x * Math.pow(10, sf['40082'])			true	false	false	false
 40081	AC_VoltageCN	AC Voltage Phase C to N value	V	uint16be	1	1	0	x * Math.pow(10, sf['40082'])			true	false	false	false
 40082	AC_Voltage_SF			int16be	1	1	0				true	false	false	true
-40083	AC_Power	AC Power value	kW	int16be	1	1	0	x * Math.pow(10, sf['40084'])			true	false	false	false
+40083	AC_Power	AC Power value	kW	int16be	1	1	0	x * Math.pow(10, sf['40084']) *0.001			true	false	false	false
 40084	AC_Power_SF			int16be	1	1	0				true	false	false	true
 40085	AC_Frequency	AC Frequency value	Hz	uint16be	1	1	0	x * Math.pow(10, sf['40086'])			true	false	false	false
 40086	AC_Frequency_SF			int16be	1	1	0				true	false	false	true
@@ -27,7 +27,7 @@ _address	name	description	unit	type	len	factor	offset	formula	role	room	poll	wp	
 40097	DC_Current_SF			int16be	1	1	0				true	false	false	true
 40098	DC_Voltage	DC Voltage value	V	uint16be	1	1	0	x * Math.pow(10, sf['40099'])			true	false	false	false
 40099	DC_Voltage_SF			int16be	1	1	0				true	false	false	true
-40100	DC_Power	DC Power Value	kW	int16be	1	1	0	x * Math.pow(10, sf['40101'])			true	false	false	false
+40100	DC_Power	DC Power Value	kW	int16be	1	1	0	x * Math.pow(10, sf['40101'])*0.001			true	false	false	false
 40101	DC_Power_SF			int16be	1	1	0				true	false	false	true
 40103	Temp_Sink	Heat Sink Temperature	°C	int16be	1	1	0	x * Math.pow(10, sf['40106'])			true	false	false	false
 40106	Temp_SF			int16be	1	1	0				true	false	false	true
